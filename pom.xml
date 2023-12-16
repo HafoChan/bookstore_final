@@ -42,6 +42,18 @@
 			<version>9.4.1.jre11</version>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.google.cloud.sql</groupId>
+			<artifactId>mysql-socket-factory</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
 
 		<!-- H2 DB AND C3POOL -->
 		<dependency>
