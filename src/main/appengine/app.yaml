@@ -1,0 +1,11 @@
+runtime: java11
+instance_class: F2
+env: standard
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+
+env_variables:
+  SPRING_PROFILES_ACTIVE: "cloud"
+  SPRING_DATASOURCE_URL: "jdbc:mysql://bookstore-408104:us-central1:instancemysql/book?cloudSqlInstance=bookstore-408104:us-central1:instancemysql&socketFactory=com.google.cloud.sql.mysql.SocketFactory&user=root&password=123456@"
+  SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
